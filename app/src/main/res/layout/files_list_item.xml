@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+                                             android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Bill Report"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/file_author"
+            android:layout_width="wrap_content"
+            tools:text="You"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/file_name"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/file_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="12 Feb 2018"
+            app:layout_constraintStart_toEndOf="@+id/file_author"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="@+id/file_author"
+            app:layout_constraintBottom_toBottomOf="@+id/file_author"/>
+
+</android.support.constraint.ConstraintLayout>
